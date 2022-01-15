@@ -11,9 +11,6 @@ body {
 
 /* header style  */
 
-.container {
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -23,6 +20,8 @@ header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .logo {
@@ -67,6 +66,8 @@ nav a:hover {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .banner {
@@ -88,8 +89,6 @@ nav a:hover {
 }
 
 .header-intro {
-  width: 505px;
-  height: 60px;
   color: #3a3a3a;
   font-size: 16px;
   margin-top: 5px;
@@ -118,8 +117,8 @@ nav a:hover {
 }
 
 .header-image img {
-  width: 440px;
-  height: 414px;
+  width: 100%;
+  height: 100%;
 }
 
 /* sponsor style  */
@@ -134,7 +133,8 @@ nav a:hover {
   padding: 40px 0;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  /* liner gradient kora lagba */
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .company-logo {
@@ -149,6 +149,8 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .card-title {
@@ -170,7 +172,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-.card-banner {
+.card-banner img {
   margin: 17px 14px;
 }
 
@@ -200,13 +202,20 @@ nav a:hover {
   font-size: 14px;
 }
 
+.card-info .card-para {
+  color: #787885;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 .card-button {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
   text-decoration: none;
   color: #e02c6d;
   font-size: 16px;
   font-weight: 600;
-  float: right;
 }
 
 /* feature style  */
@@ -217,10 +226,16 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .feature-left {
   width: 40%;
+}
+
+.feature-left img {
+  width: 100%;
 }
 
 .feature-right-details {
@@ -250,6 +265,7 @@ nav a:hover {
   padding: 10px 24px;
   font-weight: 600;
 }
+
 /* footer style  */
 
 footer {
@@ -257,6 +273,8 @@ footer {
   margin-top: 100px;
   padding: 50px;
   text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .footer-title {
   font-size: 24px;
@@ -296,4 +314,39 @@ footer {
   color: #ffffff;
   text-decoration: none;
   margin: 0 10px;
+}
+
+/* media queries */
+
+@media (max-width: 992px) {
+  .nav-link {
+    display: none;
+  }
+
+  .shop-link {
+    display: block;
+  }
+
+  .header-intro {
+    text-align: center;
+  }
+  /* Journey */
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Company */
+  .company {
+    flex-wrap: wrap;
+  }
+  .company-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Collection */
+
+  .card-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
