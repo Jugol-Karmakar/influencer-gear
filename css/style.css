@@ -172,7 +172,14 @@ nav a:hover {
   border-radius: 5px;
 }
 
+.card-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-banner img {
+  width: 100%;
   margin: 17px 14px;
 }
 
@@ -355,9 +362,6 @@ footer {
   }
 
   .card-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .card-banner img {
