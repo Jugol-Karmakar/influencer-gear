@@ -1,13 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+/* header style  */
+
+.container {
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 87px;
+  margin-bottom: 41px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 24px;
+  color: #3a3a3a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-item {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ff008e;
+}
+
+.fa-search {
+  font-size: 20px;
+}
+
+.fa-shopping-cart {
+  font-size: 20px;
 }
 
 /* top header style  */
 
+.journy {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .banner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 65px;
 }
 
 .top-header {
@@ -51,6 +117,132 @@ body {
 }
 
 .header-image img {
-  width: 420px;
-  height: 400px;
+  width: 440px;
+  height: 414px;
+  /* halka baki */
+}
+
+/* sponsor style  */
+
+.company {
+  max-width: 1100px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  /* liner gradient kora lagba */
+}
+
+.company-logo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* card section style  */
+
+.collection {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.card-title {
+  color: #3a3a3a;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card-item {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.card-banner {
+  margin: 17px 14px;
+}
+
+.card-details {
+  margin: 17px 14px;
+}
+
+.card-name {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: #18191f;
+}
+.card-price {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+
+.card-info i {
+  font-size: 12px;
+  color: #ffc014;
+}
+.card-info span {
+  margin-left: 10px;
+  color: #5e6366;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.card-button {
+  text-decoration: none;
+  color: #e02c6d;
+  font-size: 16px;
+  font-weight: 600;
+  float: right;
+}
+
+/* footer style  */
+
+footer {
+  background-color: #0a0826;
+  margin-top: 100px;
+  padding: 50px;
+  text-align: center;
+}
+.footer-title {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #d9dbe1;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.footer-rights {
+  color: #d9dbe1;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
+.iocn {
+  margin: 10px;
+  background-color: rgba(225, 225, 225, 0.1);
+  width: 50px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: #ffffff;
 }
